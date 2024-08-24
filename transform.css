@@ -1,0 +1,49 @@
+.container{
+    width:600px;
+    height: 400px;
+    display: block;
+     border: 2px solid;
+    position: absolute;
+     top: 20%;
+     left: 33%;
+     background-color: lightseagreen;
+ 
+ 
+ }
+ button{
+     background-color:gold;
+     color:white;
+     margin: 10px 10px;
+     border-radius: 20px;
+    
+  
+ 
+ }
+ button:hover{
+     background-color: lightblue;
+     color: black;
+ }
+ #duke{
+    
+     object-fit:cover;
+     padding: 110px;
+     width: 50%;
+ }
+ .container>.TRANS:hover~#duke {
+   transform: translateX(20%);
+   transition: all 2s ease-in-out;
+ }
+ 
+ .container>.ROTATE:hover~#duke{
+     transform: rotateX(360deg);
+     transition: all 2s ease-in-out;
+ }
+ .container>.SCALE:hover~#duke{
+     transform: scale(2);
+     transition: all 2s ease-in-out;
+ 
+ }
+ .container>.SKEW:hover~#duke{
+     transform: skew(45deg);
+     transition: all 2s ease-in-out;
+ }
